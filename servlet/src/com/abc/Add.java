@@ -16,6 +16,6 @@ public class Add extends HttpServlet{
 	int k = i + j;
 	PrintWriter out = res.getWriter();
 	out.println(k);
-	System.out.println("addition is " + k);
+	System.out.println("addition is = " + k);
     }
 }

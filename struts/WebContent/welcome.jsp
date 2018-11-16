@@ -9,6 +9,6 @@
 </head>
 <body>
 <s:property value="username"/>
-<h1>Logged in Successfully !! WELCOME</h1>
+<h1>Logged in Successfully!! WELCOME</h1>
 </body>
 </html>
