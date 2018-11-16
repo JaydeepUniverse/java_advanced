@@ -8,8 +8,7 @@
 <title>Welcome Page</title>
 </head>
 <body>
-<h1>WELCOME</h1>
-welcome!!!
 <s:property value="username"/>
+<h1>Logged in Successfully !! WELCOME</h1>
 </body>
 </html>
