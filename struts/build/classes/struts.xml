@@ -12,7 +12,11 @@
 			<interceptor-ref name="execAndWait"></interceptor-ref>
 			<result name="wait">interceptor_wait.jsp</result>
 			<result name="interceptor_success">interceptor_success.jsp</result>
-
+		</action>
+		
+		<action name="login_validator" class="com.ValidatorAction">
+			<result name="input">validator_index.jsp</result>
+			<result name="validator_success">validator_success.jsp</result>
 		</action>
 	</package>
 </struts>
