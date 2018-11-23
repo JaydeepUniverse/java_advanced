@@ -2,9 +2,12 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 	<package name="default" extends="struts-default">
- 		<action name="login" class="com.LoginAction">
-			<result name="success">welcome.jsp</result>
-			<result name="error">error.jsp</result>
+		<interceptors>
+			<interceptor name="uppercase" class="com.CustomInterceptor"></interceptor>
+		</interceptors>
+		<action name="login" class="com.LoginAction">
+			<result name="login_success">welcome.jsp</result>
+			<result name="login_error">error.jsp</result>
 		</action>
 
 		<action name="login_interceptor" class="com.InterceptorAction">
@@ -13,10 +16,24 @@
 			<result name="wait">interceptor_wait.jsp</result>
 			<result name="interceptor_success">interceptor_success.jsp</result>
 		</action>
-		
+
 		<action name="login_validator" class="com.ValidatorAction">
 			<result name="input">validator_index.jsp</result>
 			<result name="validator_success">validator_success.jsp</result>
+		</action>
+
+		<action name="login_CustomValidator" class="com.CustomValidator">
+			<result name="input">login2.jsp</result>
+			<result name="login_success2">welcome.jsp</result>
+			<result name="login_error2">error.jsp</result>
+		</action>
+
+
+		<action name="login_CustomInterceptor" class="com.LoginAction">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="uppercase"></interceptor-ref>
+			<result name="login_success">welcome.jsp</result>
+			<result name="login_error">error.jsp</result>
 		</action>
 	</package>
 </struts>

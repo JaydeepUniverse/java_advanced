@@ -9,7 +9,7 @@
 <title>Login Page</title>
 </head>
 <body>
-<s:form action="login">
+<s:form action="login_CustomValidator">
 <s:textfield name="username" label="Enter Name"></s:textfield>
 <s:password name="password" label="Enter Password"></s:password>
 <s:submit value="login"></s:submit>

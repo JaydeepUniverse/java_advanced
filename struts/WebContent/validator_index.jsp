@@ -10,13 +10,13 @@
 </head>
 <body>
 <s:form action="login_validator">
-<s:textfield name="name" lable="Enter Name"></s:textfield>
+<s:textfield name="name" label="Enter Name"></s:textfield>
 
-<s:textfield name="email" lable="Enter Email ID"></s:textfield>
+<s:textfield name="email" label="Enter Email ID"></s:textfield>
 
-<s:password name="password" lable="Enter Password"></s:password>
+<s:password name="password" label="Enter Password"></s:password>
 
-<s:textfield name="dob" lable="Enter date of birth"></s:textfield>
+<s:textfield name="dob" label="Enter date of birth"></s:textfield>
 
 <s:submit value="login_validator"></s:submit>
 </s:form>

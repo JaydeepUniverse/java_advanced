@@ -8,6 +8,6 @@
 </head>
 <body>
 <h3>Loading the page please wait !!!</h3>
-<img src="C:\Users\JaydeepUnivers\Downloads\15 Latest and Best Loading Animations to Make User Enjoy Waiting_files\waiting.gif" width="400" height="400">
+<img src="E:\Java\waiting.gif" width="400" height="400">
 </body>
 </html>

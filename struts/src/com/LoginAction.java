@@ -18,8 +18,8 @@ public class LoginAction {
     
     public String execute() {
 	if(password.equals("123"))
-	    return "success";
+	    return "login_success";
 	else
-	    return "error";
+	    return "login_error";
     }
 }
