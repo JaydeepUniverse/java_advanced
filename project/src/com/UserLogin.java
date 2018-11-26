@@ -23,6 +23,7 @@ public class UserLogin extends HttpServlet {
 		+ "'";
 
 	try {
+	    Class.forName("com.mysql.jdbc.Driver");
 	    Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "devops");
 	    PreparedStatement p = c.prepareStatement(user_validate);
 	    ResultSet r = p.executeQuery();
@@ -35,7 +36,7 @@ public class UserLogin extends HttpServlet {
 			RequestDispatcher rd = null;
 			PrintWriter out = res.getWriter();
 			out.write("<p id='loginMessage' style='color: green; font-size: larger;'>Welcome! Login Sucessful</p>");
-			rd = req.getRequestDispatcher("Welcome.jsp");
+			rd = req.getRequestDispatcher("Books.jsp");
 			rd.include(req, res);
 		    }
 
@@ -52,6 +53,9 @@ public class UserLogin extends HttpServlet {
 
 	    c.close();
 	} catch (SQLException e) {
+	    e.printStackTrace();
+	} catch (ClassNotFoundException e) {
+	    // TODO Auto-generated catch block
 	    e.printStackTrace();
 	}
 	System.out.println("in main service method");

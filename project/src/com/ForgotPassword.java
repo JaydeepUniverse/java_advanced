@@ -37,7 +37,7 @@ public class ForgotPassword extends HttpServlet {
 			System.out.println("in if condition");
 			Cookie ck = new Cookie("mobile_no", mobile_no+"");
 			res.addCookie(ck);
-			res.sendRedirect("ResetPassword");
+			res.sendRedirect("ResetPassword.html");
 		    }
 
 		} while (r.next());

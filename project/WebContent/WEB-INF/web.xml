@@ -48,12 +48,12 @@
 		<url-pattern>/reset_password</url-pattern>
 	</servlet-mapping>
 	
-	<servlet-mapping>
-		<servlet-name>ResetPassword</servlet-name>
-		<url-pattern>/ResetPassword</url-pattern>
-	</servlet-mapping>
 	<servlet>
-		<servlet-name>ResetPassword</servlet-name>
-		<servlet-class>com.ResetPassword</servlet-class>
+		<servlet-name>book_select</servlet-name>
+		<servlet-class>com.BookSelect</servlet-class>
 	</servlet>
+	<servlet-mapping>
+		<servlet-name>book_select</servlet-name>
+		<url-pattern>/book_select</url-pattern>
+	</servlet-mapping>
 </web-app>

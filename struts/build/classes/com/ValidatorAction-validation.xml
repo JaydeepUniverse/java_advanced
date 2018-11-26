@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC 
+   "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="name">
+		<field-validator type="requiredstring">
+			<message>name is required</message>
+		</field-validator>
+	</field>
+	<field name="email">
+		<field-validator type="requiredstring">
+			<message>email id is required</message>
+		</field-validator>
+		<field-validator type="email">
+			<message>please enter correct type of email format</message>
+		</field-validator>
+	</field>
+	<field name="password">
+		<field-validator type="requiredstring">
+			<message>Password is required</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">10</param>
+			<message>Password length must be between ${minLength} to ${maxLength}</message>
+		</field-validator>
+	</field>
+	<field name="dob">
+		<field-validator type="date">
+			<param name="min">01/01/1980</param>
+			<param name="max">21/11/2018</param>
+			<message>Date must be between ${min} to ${max}</message>
+		</field-validator>
+	</field>
+</validators>

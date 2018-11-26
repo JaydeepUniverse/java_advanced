@@ -23,6 +23,13 @@
 		});
 	});
 </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('forgot_password').click(function() {
+			$("#forgotPassword").hide();
+		});
+	});
+</script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Book Store - Welcome</title>
@@ -43,30 +50,5 @@
 	<br>
 	<h2>Forgot Password ?</h2>
 	<a id="forgot_password" href="ForgotPassword.html">click here to reset the password</a>
-	<br>
-	<br>
-	<h2>Available Books :</h2>
-	<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:3306/project" user="root"
-		password="devops" />
-	<sql:query dataSource="${snapshot}" var="result">
-         select * from books;
-      </sql:query>
-	<table border="1" width="100%">
-		<tr>
-			<th>Book ID</th>
-			<th>Book Name</th>
-			<th>Author</th>
-			<th>Price</th>
-		</tr>
-		<c:forEach var="row" items="${result.rows}">
-			<tr>
-				<td><c:out value="${row.Book_ID}" /></td>
-				<td><c:out value="${row.Book_Name}" /></td>
-				<td><c:out value="${row.Author}" /></td>
-				<td><c:out value="${row.Price}" /></td>
-			</tr>
-		</c:forEach>
-	</table>
 </body>
 </html>
