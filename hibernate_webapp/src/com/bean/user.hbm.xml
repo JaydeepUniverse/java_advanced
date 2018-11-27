@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="com.bean.User" table="USER_HIBERNATE">
+
+<id column="ID" name="id" type="java.lang.Integer" />
+<property column="USER_NAME" name="username" type="java.lang.String" />
+<property column="PASSWORD" name="password" type="java.lang.String" />
+<property column="EMAIL_ID" name="emailid" type="java.lang.String" />
+<property column="MOBILE_NO" name="mobileNo" type="java.lang.String" />
+<property column="CITY" name="city" type="java.lang.String" />
+</class>
+</hibernate-mapping>
