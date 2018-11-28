@@ -21,7 +21,8 @@ public class UserDAO {
 	    user.setEmailid(emailid);
 	    user.setMobileNo(mobileNo);
 	    user.setCity(city);
-	    session.save(user);
+	//    session.save(user);
+	    session.update(user);
 	    transaction.commit();
 	    System.out.println("\n\n Details Added \n");
 	}catch(HibernateException e) {
