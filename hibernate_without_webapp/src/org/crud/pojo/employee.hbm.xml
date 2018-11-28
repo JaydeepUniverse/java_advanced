@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="org.crud.pojo.Employee" table="EMPCRUD1">
+
+<id column="EMP_ID" name="emp_id" type="java.lang.Integer" >
+<generator class="increment" />
+</id>
+<property column="EMP_NAME" name="emp_name" type="java.lang.String" />
+<property column="EMP_SALARY" name="emp_salary" type="java.lang.Integer" />
+<property column="EMP_PHONE" name="emp_phone" type="java.lang.Integer" />
+<property column="EMP_CITY" name="emp_city" type="java.lang.String" not-null="true" />
+</class>
+</hibernate-mapping>
