@@ -78,8 +78,8 @@ public class MainClass {
 	    query.setInteger("phone", 123);
 	    Employee employee = (Employee)query.uniqueResult();
 	    session.delete(employee);
+	    transaction.commit();
 	    System.out.println("employee records deleted successfully");
-	    //transaction.commit();
 	} catch (HibernateException e) {
 	    transaction.rollback();
 	    e.printStackTrace();
@@ -99,8 +99,8 @@ public class MainClass {
 	    Employee employee = (Employee)query.uniqueResult();
     	    employee.setEmp_salary(60000);
     	    session.update(employee);
+	    transaction.commit();
 	    System.out.println("employee records updated successfully");
-	    //transaction.commit();
 	} catch (HibernateException e) {
 	    transaction.rollback();
 	    e.printStackTrace();
