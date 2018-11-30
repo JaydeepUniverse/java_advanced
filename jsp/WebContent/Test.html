@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		
+		<script type="text/javascript" src="test.js">
+		</script>
+		<script type="text/javascript">
+		function calculate()
+		{
+			var qty = document.getElementById("qty").value;
+			var value = document.getElementById("value0").value;
+			
+			var result =  value * qty;
+				
+			document.getElementById("result").innerHTML = result;	
+		}
+</script>
+	</head>
+<body>
+<form>
+<p>
+	 Your order: <span id="result"></span><br /><br />
+	 Order total: <span id="orderTotal"></span><br /><br />
+	
+	Price: 10<input type="hidden" id="value0" value="10"/>
+	Quantity:<input type="text" id="qty" size="2" value=""/>	
+	<input type="button" onclick="calculate();" value="Add"/>
+	<br/>
+	Price: 20<input type="hidden" id="value1" value="20"/>
+	Quantity:<input type="text" id="qty"  size="2" value=""/>	
+	<input type="button" onclick="calculate();" value="Add"/>	
+	<br/>
+	Price: 30<input type="hidden" id="value2" value="30"/>
+	Quantity:<input type="text" id="qty" size="2" value=""/>	
+	<input type="button" onclick="calculate();" value="Add"/>
+
+</form>    				
+    			
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.onetomany.model.Bank" table="BANK">
+		<id column="DEPARTMENT_ID" name="bankid" type="java.lang.Long"> 
+			<generator class="increment" /> 
+		</id>
+		<property column="BANK_NAME" name="bankname" type="java.lang.String" />
+			<set name="customers" table="CUSTOMER" inverse="true" lazy="true" fetch="select">
+				<key><column name="bankid" not-null="true"/></key>
+				<one-to-many class="com.onetomany.model.Customer" />
+			</set>
+	</class>
+</hibernate-mapping>

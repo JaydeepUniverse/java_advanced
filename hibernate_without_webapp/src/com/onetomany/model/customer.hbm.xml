@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.onetomany.model.Customer" table="CUSTOMER">
+
+		<id column="CUSTOMER_ID" name="customerid">
+			<generator class="native" />
+		</id>
+		<property name="firstname"/>
+		<property column="LAST_NAME" name="lastname" />
+		<property column="BIRTH_DATE" name="birthdate" />
+		<property column="PHONE_NUMBER" name="phone" />
+		
+		<many-to-one name="bank" class="com.onetomany.model.Bank" fetch="select">
+			<column name="bankid" not-null="true" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>
