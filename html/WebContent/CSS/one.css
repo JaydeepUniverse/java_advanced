@@ -1,0 +1,14 @@
+/* This is comment section */
+
+/* This is multiline comment - first line
+second line */
+
+/* Syntex of CSS
+
+selected tag{
+  property: value;
+} */
+
+h1{
+  color: orange;
+}

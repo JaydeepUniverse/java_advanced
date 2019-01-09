@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form with Action</title>
+  </head>
+  <body>
+    <form>
+      <h2>Enter some text :</h2>
+      <input type="text" name="usertext" value="">
+      <input type="submit" name="" value="Submit">
+      <!-- When clicked on submit notice the url with name attribute would have value as input the text by user -->
+    </form>
+
+    <form action="https://www.google.com" method="get">
+      <h2>Enter some text here and take me to Google!!</h2>
+      <input type="text" name="usertext" value="">
+      <input type="submit" name="" value="Submit">
+      <!-- When clicked on submit notice the url with name attribute would have value as input the text by user -->
+    </form>
+
+    <form>
+      <h3>Form with label</h3>
+      <!-- form with lable -->
+      <label>
+        Enter Text:
+        <input type="text" name="" value="">
+      </label>
+      <label>
+        Enter Email:
+        <input type="email" name="" value="">
+      </label>
+    </form>
+
+    <form>
+      <h3>Form with label 2</h3>
+      <!-- form with lable -->
+      <label>
+        Enter Text:
+        <input type="text" name="" value="">
+      </label>
+      <label>
+        Enter Email:
+        <input type="email" name="" value="">
+      </label>
+    </form>
+
+    <form>
+      <h2>Label with id-for association</h2>
+      <label for="userinput">Enter Text :</label>
+      <input id="userinput" type="text" name="" value="">
+      <input id="userinput" type="text" name="" value="">
+      <!-- This means that the value given to these 2 boxes are associated with id userinput which is associated with label For userinput -->
+    </form>
+
+    <form>
+      <h3>Input field with placeholder and Required attribute</h3>
+      <input type="text" name="" placeholder="Enter username">
+      <input type="password" name="" placeholder="Enter password" Required>
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Feedback</title>
+  </head>
+  <body>
+  <!-- Observe the value in url when click on submit button -->
+  <h1>Hotel Feedback Form</h1>
+    <form>
+      <h2>Are you from Inside USA or Outside USA ?</h2>
+
+      <input id="inusa" type="radio" name="location" value="Inside">
+      <label for="inusa">
+        Inside
+      </label>
+      <input id="outusa" type="radio" name="location" value="Outside">
+      <label for="outusa">
+        Outside
+      </label>
+
+      <h2>How was your service ?</h2>
+      <select name="stars">
+        <option value="Great">3</option>
+        <option value="Okay">2</option>
+        <option value="Bad">1</option>
+      </select>
+
+      <h2>Any other Feedback ?</h2>
+      <textarea name="user_feedback" rows="8" cols="80"></textarea>
+
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>
