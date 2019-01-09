@@ -1,0 +1,39 @@
+body{
+  background-color: #abe3ed;
+}
+
+h1{
+  border: 1px solid black;
+}
+
+p{
+  background-color: #ffff66;
+}
+
+h2{
+  color: purple;
+}
+
+.first_list{
+  color: purple;
+  text-decoration: overline;
+}
+
+.textarea_class{
+  border:5px solid gray;
+  width: 800px;
+  height: 400px;
+}
+
+input{
+  border: 2px solid rgb(242, 2, 2);
+}
+
+div{
+  border: 5px dashed yellow;
+  background-color: blue;
+}
+
+a:visited{
+  color: green;
+}

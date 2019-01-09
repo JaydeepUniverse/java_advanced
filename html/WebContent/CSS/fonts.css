@@ -1,0 +1,28 @@
+h1{
+  font-family: "Verdana";
+  text-align: center;
+}
+
+body{
+  font-size: 15px;
+}
+
+p{
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#two{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#three{
+  font-family: 'Pacifico', cursive;
+}
+/* The mechanism of em works like this
+entire body's font size would become reference
+hence
+1em = 15px
+2em = 30px */

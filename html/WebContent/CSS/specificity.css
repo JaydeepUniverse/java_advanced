@@ -1,0 +1,10 @@
+li{
+  color: red;
+}
+.first{
+  color: blue;
+}
+#two{
+  color: green;
+  border: 3px solid purple;
+}

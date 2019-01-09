@@ -1,0 +1,27 @@
+h3{
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+}
+.art{
+  margin: auto;
+}
+td{
+  height: 200px;
+  width: 100px;
+  border: 5px solid white;
+}
+#first{
+  background-color: #272838;
+}
+#second{
+  background-color: #5D536B;
+}
+#third{
+  background-color: #7D6B91;
+}
+#fourth{
+  background-color: #989FCE;
+}
+#fifth{
+  background-color: #B7BEE8;
+}
