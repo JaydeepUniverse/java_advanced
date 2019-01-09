@@ -10,5 +10,38 @@ selected tag{
 } */
 
 h1{
-  color: orange;
+  color: blue;
+}
+
+p{
+  color: rgb(255, 51, 0);
+}
+
+li{
+  color: #00ff00;
+}
+
+h4{
+  color: rgba(255, 51, 0, 0.4);
+}
+
+body{
+  background: gray;
+}
+
+/* Another example of body background with images */
+/* body{
+  background: url(../Images/mickey.png);
+} */
+
+div{
+  background: blue;
+  border-style: double;
+  border-width: 20px;
+  /* Another style of border width/* border-width: medium; */
+}
+
+span{
+  background: red;
+  color: black;
 }
